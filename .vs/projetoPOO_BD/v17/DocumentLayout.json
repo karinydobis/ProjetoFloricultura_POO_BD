@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A086512-F1E8-432E-A0DC-CCCFB9E2B623}|projetoPOO_BD.csproj|c:\\users\\dobis\\onedrive\\documentos\\projetopoo_bd\\projetopoo_bd\\forms\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A086512-F1E8-432E-A0DC-CCCFB9E2B623}|projetoPOO_BD.csproj|solutionrelative:forms\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A086512-F1E8-432E-A0DC-CCCFB9E2B623}|projetoPOO_BD.csproj|c:\\users\\dobis\\onedrive\\documentos\\projetopoo_bd\\projetopoo_bd\\forms\\cadastroprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A086512-F1E8-432E-A0DC-CCCFB9E2B623}|projetoPOO_BD.csproj|solutionrelative:forms\\cadastroprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A086512-F1E8-432E-A0DC-CCCFB9E2B623}|projetoPOO_BD.csproj|c:\\users\\dobis\\onedrive\\documentos\\projetopoo_bd\\projetopoo_bd\\dao\\produtodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A086512-F1E8-432E-A0DC-CCCFB9E2B623}|projetoPOO_BD.csproj|solutionrelative:dao\\produtodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A086512-F1E8-432E-A0DC-CCCFB9E2B623}|projetoPOO_BD.csproj|c:\\users\\dobis\\onedrive\\documentos\\projetopoo_bd\\projetopoo_bd\\forms\\atualizarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A086512-F1E8-432E-A0DC-CCCFB9E2B623}|projetoPOO_BD.csproj|solutionrelative:forms\\atualizarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A086512-F1E8-432E-A0DC-CCCFB9E2B623}|projetoPOO_BD.csproj|C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\forms\\atualizarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A086512-F1E8-432E-A0DC-CCCFB9E2B623}|projetoPOO_BD.csproj|solutionrelative:forms\\atualizarproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProdutoDAO.cs",
+              "DocumentMoniker": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\DAO\\ProdutoDAO.cs",
+              "RelativeDocumentMoniker": "DAO\\ProdutoDAO.cs",
+              "ToolTip": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\DAO\\ProdutoDAO.cs",
+              "RelativeToolTip": "DAO\\ProdutoDAO.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwCQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T15:02:07.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CadastroProdutos.cs",
+              "DocumentMoniker": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\Forms\\CadastroProdutos.cs",
+              "RelativeDocumentMoniker": "Forms\\CadastroProdutos.cs",
+              "ToolTip": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\Forms\\CadastroProdutos.cs",
+              "RelativeToolTip": "Forms\\CadastroProdutos.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvywAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T22:07:46.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AtualizarProduto.cs",
+              "DocumentMoniker": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\Forms\\AtualizarProduto.cs",
+              "RelativeDocumentMoniker": "Forms\\AtualizarProduto.cs",
+              "ToolTip": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\Forms\\AtualizarProduto.cs",
+              "RelativeToolTip": "Forms\\AtualizarProduto.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T21:46:45.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Produtos.cs",
+              "DocumentMoniker": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\Forms\\Produtos.cs",
+              "RelativeDocumentMoniker": "Forms\\Produtos.cs",
+              "ToolTip": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\Forms\\Produtos.cs",
+              "RelativeToolTip": "Forms\\Produtos.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T21:46:54.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AtualizarProduto.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\Forms\\AtualizarProduto.cs",
+              "RelativeDocumentMoniker": "Forms\\AtualizarProduto.cs",
+              "ToolTip": "C:\\Users\\dobis\\OneDrive\\Documentos\\projetoPOO_BD\\projetoPOO_BD\\Forms\\AtualizarProduto.cs [Projeto]",
+              "RelativeToolTip": "Forms\\AtualizarProduto.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T22:43:26.501Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
