@@ -101,3 +101,4 @@ C:\Users\dobis\OneDrive\Documentos\projetoPOO_BD\projetoPOO_BD\bin\Debug\net8.0-
 C:\Users\dobis\OneDrive\Documentos\projetoPOO_BD\projetoPOO_BD\obj\Debug\net8.0-windows\projetoP.539F5573.Up2Date
 C:\Users\dobis\OneDrive\Documentos\projetoPOO_BD\projetoPOO_BD\obj\Debug\net8.0-windows\projetoPOO_BD.genruntimeconfig.cache
 C:\Users\dobis\OneDrive\Documentos\projetoPOO_BD\projetoPOO_BD\obj\Debug\net8.0-windows\ref\projetoPOO_BD.dll
+C:\Users\dobis\OneDrive\Documentos\projetoPOO_BD\projetoPOO_BD\obj\Debug\net8.0-windows\projetoPOO_BD.sourcelink.json

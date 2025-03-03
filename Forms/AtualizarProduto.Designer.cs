@@ -203,9 +203,9 @@
             label1.ForeColor = Color.DarkGreen;
             label1.Location = new Point(69, 196);
             label1.Name = "label1";
-            label1.Size = new Size(58, 45);
+            label1.Size = new Size(48, 45);
             label1.TabIndex = 66;
-            label1.Text = "ID*:";
+            label1.Text = "ID:";
             // 
             // label3
             // 

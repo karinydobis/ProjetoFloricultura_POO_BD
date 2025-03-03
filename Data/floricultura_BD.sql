@@ -3,45 +3,45 @@ USE floriculturaFlorescer;
     
 CREATE TABLE Clientes (
 	idCliente INT PRIMARY KEY AUTO_INCREMENT,
-	nomeCliente VARCHAR(80),
-	phone VARCHAR(20),
+	nomeCliente VARCHAR(80) NOT NULL,
+	telefone VARCHAR(20),
 	email VARCHAR(50),
-	cpf  VARCHAR(20)
+	cpf  VARCHAR(20) NOT NULL UNIQUE
 );
 
 CREATE TABLE Funcionarios (
 	idFuncionario INT PRIMARY KEY AUTO_INCREMENT,
-	nome VARCHAR(80),
-	phone VARCHAR(20),
+	nome VARCHAR(80) NOT NULL,
+	telefone VARCHAR(20),
 	email VARCHAR(50),
-	cpf  VARCHAR(20),
+	cpf  VARCHAR(20) NOT NULL UNIQUE,
     dataAdmissao DATE
 );
 
 CREATE TABLE Fornecedores (
 	idFornecedor INT PRIMARY KEY AUTO_INCREMENT,
-    nomeFantasia VARCHAR(80),
+    nomeFantasia VARCHAR(80) NOT NULL,
     razaoSocial VARCHAR(80),
-    cnpj VARCHAR(20),
+    cnpj VARCHAR(20) NOT NULL UNIQUE,
     telefone VARCHAR(20),
     email VARCHAR(80)
 );
 
 CREATE TABLE Produtos (
 	idProduto INT PRIMARY KEY AUTO_INCREMENT,
-    nomeProduto VARCHAR(80),
+    nomeProduto VARCHAR(80) NOT NULL,
     categoria VARCHAR(80),
     descricao TEXT,
     preco DOUBLE,
     undProduto VARCHAR(20),
-    fkidFornecedor INT,
+    fkidFornecedor INT NOT NULL,
     FOREIGN KEY (fkidFornecedor) REFERENCES Fornecedores (idFornecedor)
 );
 
 CREATE TABLE Estoques (
 	idEstoque INT PRIMARY KEY AUTO_INCREMENT,
     qtd INT,
-    fkidProduto INT,
+    fkidProduto INT NOT NULL,
     FOREIGN KEY (fkidProduto) REFERENCES Produtos (idProduto)
 );
     
@@ -59,8 +59,8 @@ CREATE TABLE ItensPedido(
 	idItensPedido INT PRIMARY KEY AUTO_INCREMENT,
     qtdItens INT,
     precoUnitario DOUBLE,
-    fkidProduto INT,
-    fkidPedido INT,
+    fkidProduto INT NOT NULL,
+    fkidPedido INT NOT NULL,
     FOREIGN KEY (fkidProduto) REFERENCES Produtos (idProduto),
     FOREIGN KEY (fkidPedido) REFERENCES Pedidos (idPedido)
 );
@@ -73,10 +73,15 @@ INSERT INTO Fornecedores(nomeFantasia, razaoSocial, cnpj, telefone, email) VALUE
 ("Jardim Encantado", "Jardim Encantado LTDA", "23.456.789/0001-80",
 "(21) 99876-5432", "vendas@jardimencantado.com");
 
+INSERT INTO Fornecedores(nomeFantasia, razaoSocial, cnpj, telefone, email) VALUES
+("Flores do Campo", "Flores do Campo Comércio de Plantas LTDA", "45.123.456/0001-90",
+"(11) 98765-4321", "contato@floresdocampo.com");
+
 INSERT INTO Produtos (nomeProduto, categoria, descricao, preco, undProduto, fkidFornecedor) VALUES 
 ("Terra Adubada", "Adubos e Fertilizantes", "Terra com adubo orgânico", 15.00, "Kg", 1);
 
 INSERT INTO Produtos (nomeProduto, categoria, descricao, preco, undProduto, fkidFornecedor) VALUES 
-("Lírios Branos", "Flores e Arranjos", "Lírios perfumados brancos", 50.00, "Unidade", 2);
+("Lírios Brancos", "Flores e Arranjos", "Lírios perfumados brancos", 50.00, "Unidade", 2);
 
-
+INSERT INTO Produtos (nomeProduto, categoria, descricao, preco, undProduto, fkidFornecedor) VALUES 
+("Rosas Vermelhas", "Flores e Arranjos", "Arranjo de rosas vermelhas frescas", 60.00, "Unidade", 3);

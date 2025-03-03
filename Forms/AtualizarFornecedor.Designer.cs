@@ -47,6 +47,7 @@
             label13 = new Label();
             btSalvarnovo = new Button();
             btCancelarnovo = new Button();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -66,9 +67,9 @@
             label6.ForeColor = Color.DarkGreen;
             label6.Location = new Point(502, 427);
             label6.Name = "label6";
-            label6.Size = new Size(142, 45);
+            label6.Size = new Size(132, 45);
             label6.TabIndex = 42;
-            label6.Text = "TELEFONE*:";
+            label6.Text = "TELEFONE:";
             // 
             // txtEmailnovo
             // 
@@ -86,9 +87,9 @@
             label12.ForeColor = Color.DarkGreen;
             label12.Location = new Point(502, 322);
             label12.Name = "label12";
-            label12.Size = new Size(100, 45);
+            label12.Size = new Size(91, 45);
             label12.TabIndex = 40;
-            label12.Text = "EMAIL*:";
+            label12.Text = "EMAIL:";
             // 
             // label10
             // 
@@ -126,9 +127,9 @@
             label4.ForeColor = Color.DarkGreen;
             label4.Location = new Point(59, 427);
             label4.Name = "label4";
-            label4.Size = new Size(181, 45);
+            label4.Size = new Size(172, 45);
             label4.TabIndex = 36;
-            label4.Text = "RAZÃO SOCIAL*:";
+            label4.Text = "RAZÃO SOCIAL:";
             // 
             // label5
             // 
@@ -137,9 +138,9 @@
             label5.ForeColor = Color.DarkGreen;
             label5.Location = new Point(502, 231);
             label5.Name = "label5";
-            label5.Size = new Size(84, 45);
+            label5.Size = new Size(74, 45);
             label5.TabIndex = 37;
-            label5.Text = "CNPJ*:";
+            label5.Text = "CNPJ:";
             // 
             // txtNomenovo
             // 
@@ -179,9 +180,9 @@
             label1.ForeColor = Color.DarkGreen;
             label1.Location = new Point(59, 231);
             label1.Name = "label1";
-            label1.Size = new Size(58, 45);
+            label1.Size = new Size(48, 45);
             label1.TabIndex = 32;
-            label1.Text = "ID*:";
+            label1.Text = "ID:";
             // 
             // label3
             // 
@@ -190,9 +191,9 @@
             label3.ForeColor = Color.DarkGreen;
             label3.Location = new Point(59, 322);
             label3.Name = "label3";
-            label3.Size = new Size(199, 45);
+            label3.Size = new Size(191, 45);
             label3.TabIndex = 33;
-            label3.Text = "NOME FANTASIA*:";
+            label3.Text = "NOME FANTASIA:";
             // 
             // pictureBox2
             // 
@@ -243,12 +244,23 @@
             btCancelarnovo.UseVisualStyleBackColor = false;
             btCancelarnovo.Click += btCancelarnovo_Click;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Javanese Text", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.DarkGreen;
+            label7.Location = new Point(59, 544);
+            label7.Name = "label7";
+            label7.Size = new Size(0, 34);
+            label7.TabIndex = 47;
+            // 
             // AtualizarFornecedor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightYellow;
             ClientSize = new Size(933, 827);
+            Controls.Add(label7);
             Controls.Add(pictureBox2);
             Controls.Add(label13);
             Controls.Add(btSalvarnovo);
@@ -294,5 +306,6 @@
         private Label label13;
         private Button btSalvarnovo;
         private Button btCancelarnovo;
+        private Label label7;
     }
 }

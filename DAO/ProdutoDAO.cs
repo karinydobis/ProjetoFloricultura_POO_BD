@@ -25,11 +25,11 @@ namespace projetoPOO_BD.DAO
                 comando.Parameters.AddWithValue("@undProduto", produto.undProduto);
                 comando.Parameters.AddWithValue("@fkidFornecedor", produto._fornecedor.idFornecedor);
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK);
+                MessageBox.Show("Cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao salvar cadastro!" + ex.Message, "Erro", MessageBoxButtons.OK);
+                MessageBox.Show($"Erro ao salvar cadastro! {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
         public List<Produto> Listar()
@@ -62,7 +62,7 @@ namespace projetoPOO_BD.DAO
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro ao listar cadastros!" + ex.Message);
+                throw new Exception($"Erro ao listar cadastros! {ex.Message}");
             }
 
             return listaProdutos;
@@ -95,7 +95,7 @@ namespace projetoPOO_BD.DAO
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex.Message}", "Atualizar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show($"Erro ao atualizar cadastro! {ex.Message}", "Atualizar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 throw;
             }
         }
@@ -111,12 +111,12 @@ namespace projetoPOO_BD.DAO
 
                 comando.ExecuteNonQuery();
 
-                MessageBox.Show("Cadastro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Cadastro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex.Message}", "Apagar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show($"Erro ao excluir cadastro! {ex.Message}", "Apagar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 

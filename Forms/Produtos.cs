@@ -87,13 +87,13 @@ namespace projetoPOO_BD
                 }
                 else
                 {
-                    MessageBox.Show("A linha selecionada não contém um produto válido para edição.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("A linha selecionada não contém um produto válido para edição.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
 
             }
             else
             {
-                MessageBox.Show("Por favor, selecione um produto na lista para editar.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Por favor, selecione um produto na lista para editar.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -117,12 +117,12 @@ namespace projetoPOO_BD
                 }
                 else
                 {
-                    MessageBox.Show("A linha selecionada não contém um produto válido para exclusão.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("A linha selecionada não contém um produto válido para exclusão.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
             else
             {
-                MessageBox.Show("Por favor, selecione um produto na lista para excluir.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Por favor, selecione um produto na lista para excluir.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
     }

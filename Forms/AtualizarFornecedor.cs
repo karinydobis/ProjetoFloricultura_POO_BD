@@ -16,7 +16,7 @@ namespace projetoPOO_BD.Forms
     public partial class AtualizarFornecedor : Form
     {
         private int idFornecedor;
-        public AtualizarFornecedor(int id,string razaoSocial, string nomeFantasia, string telefone, string email, string cnpj)
+        public AtualizarFornecedor(int id, string razaoSocial, string nomeFantasia, string telefone, string email, string cnpj)
         {
             InitializeComponent();
 
@@ -63,8 +63,7 @@ namespace projetoPOO_BD.Forms
                 txtEmailnovo.Clear();
                 txtIdnovo.Clear();
             }
-
         }
-
+      
     }
 }
