@@ -43,8 +43,10 @@
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             CATEGORIA = new DataGridViewTextBoxColumn();
+            descricao = new DataGridViewTextBoxColumn();
             PRECO = new DataGridViewTextBoxColumn();
             UNIDADE = new DataGridViewTextBoxColumn();
+            fkidFornecedor = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvProdutos).BeginInit();
             SuspendLayout();
@@ -147,7 +149,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgvProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvProdutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProdutos.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, CATEGORIA, PRECO, UNIDADE });
+            dgvProdutos.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, CATEGORIA, descricao, PRECO, UNIDADE, fkidFornecedor });
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.Ivory;
             dataGridViewCellStyle2.Font = new Font("Javanese Text", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -196,6 +198,14 @@
             CATEGORIA.MinimumWidth = 6;
             CATEGORIA.Name = "CATEGORIA";
             // 
+            // descricao
+            // 
+            descricao.DataPropertyName = "descricao";
+            descricao.HeaderText = "DESCRIÇÃO";
+            descricao.MinimumWidth = 6;
+            descricao.Name = "descricao";
+            descricao.Width = 125;
+            // 
             // PRECO
             // 
             PRECO.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -211,6 +221,14 @@
             UNIDADE.HeaderText = "UNIDADE";
             UNIDADE.MinimumWidth = 6;
             UNIDADE.Name = "UNIDADE";
+            // 
+            // fkidFornecedor
+            // 
+            fkidFornecedor.DataPropertyName = "fkidFornecedor";
+            fkidFornecedor.HeaderText = "FORNECEDOR";
+            fkidFornecedor.MinimumWidth = 6;
+            fkidFornecedor.Name = "fkidFornecedor";
+            fkidFornecedor.Width = 125;
             // 
             // Produtos
             // 
@@ -247,7 +265,9 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn CATEGORIA;
+        private DataGridViewTextBoxColumn descricao;
         private DataGridViewTextBoxColumn PRECO;
         private DataGridViewTextBoxColumn UNIDADE;
+        private DataGridViewTextBoxColumn fkidFornecedor;
     }
 }

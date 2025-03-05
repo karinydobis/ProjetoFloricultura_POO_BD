@@ -48,7 +48,7 @@ namespace projetoPOO_BD
 
             foreach (var item in fornecedoresFiltrados)
             {
-                dgvFornecedor.Rows.Add(item.idFornecedor, item.nomeFantasia,
+                dgvFornecedor.Rows.Add(item.idFornecedor, item.nomeFantasia, item.razaoSocial,
                      item.telefone, item.email, item.cnpj);
             }
         }
@@ -91,7 +91,7 @@ namespace projetoPOO_BD
 
             foreach (var item in listaFornecedor)
             {
-                dgvFornecedor.Rows.Add(item.idFornecedor, item.nomeFantasia,
+                dgvFornecedor.Rows.Add(item.idFornecedor, item.nomeFantasia, item.razaoSocial,
                      item.telefone, item.email, item.cnpj);
             }
         }

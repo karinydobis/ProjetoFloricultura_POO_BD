@@ -36,6 +36,7 @@
             pictureBox1 = new PictureBox();
             label2 = new Label();
             pictureBox2 = new PictureBox();
+            label3 = new Label();
             linkLabel1 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -136,13 +137,25 @@
             pictureBox2.TabIndex = 7;
             pictureBox2.TabStop = false;
             // 
+            // label3
+            // 
+            label3.Font = new Font("Javanese Text", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.DarkGreen;
+            label3.Location = new Point(-6, 116);
+            label3.Name = "label3";
+            label3.Size = new Size(144, 38);
+            label3.TabIndex = 9;
+            label3.Text = "♡ Kariny Dobis";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Javanese Text", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             linkLabel1.LinkColor = Color.DarkGreen;
-            linkLabel1.Location = new Point(813, 761);
+            linkLabel1.Location = new Point(801, 754);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(115, 20);
+            linkLabel1.Size = new Size(134, 38);
             linkLabel1.TabIndex = 8;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "florescer.com.br";
@@ -153,6 +166,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightYellow;
             ClientSize = new Size(933, 827);
+            Controls.Add(label3);
             Controls.Add(linkLabel1);
             Controls.Add(pictureBox2);
             Controls.Add(label2);
@@ -178,6 +192,7 @@
         private PictureBox pictureBox1;
         private Label label2;
         private PictureBox pictureBox2;
+        private Label label3;
         private LinkLabel linkLabel1;
     }
 }

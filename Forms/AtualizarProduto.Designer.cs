@@ -214,9 +214,9 @@
             label3.ForeColor = Color.DarkGreen;
             label3.Location = new Point(69, 299);
             label3.Name = "label3";
-            label3.Size = new Size(98, 45);
+            label3.Size = new Size(88, 45);
             label3.TabIndex = 67;
-            label3.Text = "NOME*:";
+            label3.Text = "NOME:";
             // 
             // pictureBox2
             // 

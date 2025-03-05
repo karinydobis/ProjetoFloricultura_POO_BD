@@ -26,6 +26,7 @@ namespace projetoPOO_BD.DAO
                 comando.Parameters.AddWithValue("@fkidFornecedor", produto._fornecedor.idFornecedor);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Conexao.FecharConexao();
             }
             catch (Exception ex)
             {
@@ -53,8 +54,6 @@ namespace projetoPOO_BD.DAO
                     produto.undProduto = reader.GetString("undProduto");
                     int idFornecedor = reader.GetInt32("fkidFornecedor");
                     produto._fornecedor = new Fornecedor { idFornecedor = idFornecedor };
-                 
-
                     listaProdutos.Add(produto);
                 }
 
@@ -76,9 +75,7 @@ namespace projetoPOO_BD.DAO
             {
                 string sql = "UPDATE Produtos SET idProduto = @idProduto, nomeProduto = @nomeProduto, categoria = @categoria, " +
                     "descricao = @descricao, preco = @preco, undProduto = @undProduto, fkidFornecedor = @fkidFornecedor WHERE idProduto = @idProduto";
-
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
-
                 comando.Parameters.AddWithValue("@nomeProduto", produtos.nomeProduto);
                 comando.Parameters.AddWithValue("@categoria", produtos.categoria);
                 comando.Parameters.AddWithValue("@descricao", produtos.descricao);
@@ -86,11 +83,8 @@ namespace projetoPOO_BD.DAO
                 comando.Parameters.AddWithValue("@undProduto", produtos.undProduto);
                 comando.Parameters.AddWithValue("@idProduto", produtos.idProduto);
                 comando.Parameters.AddWithValue("@fkidFornecedor", produtos._fornecedor.idFornecedor);
-
                 comando.ExecuteNonQuery();
-
                 MessageBox.Show("Dados atualizados!", "Atualizar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 Conexao.FecharConexao();
             }
             catch (Exception ex)
@@ -106,13 +100,10 @@ namespace projetoPOO_BD.DAO
             {
                 string sql = "DELETE FROM Produtos WHERE idProduto = @idProduto";
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
-
                 comando.Parameters.AddWithValue("@idProduto", idProduto);
-
                 comando.ExecuteNonQuery();
-
                 MessageBox.Show("Cadastro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                Conexao.FecharConexao();
             }
             catch (Exception ex)
             {

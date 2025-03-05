@@ -43,6 +43,7 @@
             dgvFornecedor = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            razaoSocial = new DataGridViewTextBoxColumn();
             TELEFONE = new DataGridViewTextBoxColumn();
             EMAIL = new DataGridViewTextBoxColumn();
             CNPJ = new DataGridViewTextBoxColumn();
@@ -148,7 +149,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgvFornecedor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvFornecedor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvFornecedor.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, TELEFONE, EMAIL, CNPJ });
+            dgvFornecedor.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, razaoSocial, TELEFONE, EMAIL, CNPJ });
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = Color.Ivory;
             dataGridViewCellStyle2.Font = new Font("Javanese Text", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -174,7 +175,6 @@
             dgvFornecedor.RowsDefaultCellStyle = dataGridViewCellStyle4;
             dgvFornecedor.Size = new Size(784, 600);
             dgvFornecedor.TabIndex = 23;
-           
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -191,6 +191,14 @@
             dataGridViewTextBoxColumn2.HeaderText = "NOME";
             dataGridViewTextBoxColumn2.MinimumWidth = 6;
             dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // razaoSocial
+            // 
+            razaoSocial.DataPropertyName = "razaoSocial";
+            razaoSocial.HeaderText = "RAZÃO SOCIAL";
+            razaoSocial.MinimumWidth = 6;
+            razaoSocial.Name = "razaoSocial";
+            razaoSocial.Width = 125;
             // 
             // TELEFONE
             // 
@@ -251,6 +259,7 @@
         private DataGridView dgvFornecedor;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn razaoSocial;
         private DataGridViewTextBoxColumn TELEFONE;
         private DataGridViewTextBoxColumn EMAIL;
         private DataGridViewTextBoxColumn CNPJ;

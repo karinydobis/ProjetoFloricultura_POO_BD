@@ -16,18 +16,15 @@ namespace projetoPOO_BD.DAO
             try
             {
                 string sql = "INSERT INTO Fornecedores (nomeFantasia, razaoSocial, cnpj, telefone, email) VALUES (@nomeFantasia, @razaoSocial, @cnpj, @telefone, @email)";
-               
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
-
                 comando.Parameters.AddWithValue("@nomeFantasia", fornecedor.nomeFantasia);
                 comando.Parameters.AddWithValue("@razaoSocial", fornecedor.razaoSocial);
                 comando.Parameters.AddWithValue("@cnpj", fornecedor.cnpj);
                 comando.Parameters.AddWithValue("@telefone", fornecedor.telefone);
                 comando.Parameters.AddWithValue("@email", fornecedor.email);
-
                 comando.ExecuteNonQuery();
-
                 MessageBox.Show("Cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Conexao.FecharConexao();
             }
             catch (Exception ex)
             {
@@ -42,20 +39,15 @@ namespace projetoPOO_BD.DAO
             {
                 string sql = "UPDATE Fornecedores SET idFornecedor = @idFornecedor, nomeFantasia = @nomeFantasia, razaoSocial = @razaoSocial, cnpj = @cnpj, telefone = @telefone, " +
                     "email = @email WHERE idFornecedor = @idFornecedor";
-
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
-
                 comando.Parameters.AddWithValue("@nomeFantasia", fornecedores.nomeFantasia);
                 comando.Parameters.AddWithValue("@razaoSocial", fornecedores.razaoSocial);
                 comando.Parameters.AddWithValue("@cnpj", fornecedores.cnpj);
                 comando.Parameters.AddWithValue("@telefone", fornecedores.telefone);
                 comando.Parameters.AddWithValue("@email", fornecedores.email);
                 comando.Parameters.AddWithValue("@idFornecedor", fornecedores.idFornecedor);
-
                 comando.ExecuteNonQuery();
-
                 MessageBox.Show("Dados atualizados!", "Atualizar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 Conexao.FecharConexao();
             }
             catch (Exception ex)
@@ -71,12 +63,10 @@ namespace projetoPOO_BD.DAO
             {
                 string sql = "DELETE FROM Fornecedores WHERE idFornecedor = @idFornecedor";
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
-
                 comando.Parameters.AddWithValue("@idFornecedor", idFornecedor);
-
                 comando.ExecuteNonQuery();
-
                 MessageBox.Show("Cadastro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Conexao.FecharConexao();
 
             }
             catch (Exception ex)
@@ -105,8 +95,6 @@ namespace projetoPOO_BD.DAO
                     forn.cnpj = reader.GetString("cnpj");
                     forn.telefone = reader.GetString("telefone");
                     forn.email = reader.GetString("email");
-                  
-               
                     listaFornecedor.Add(forn);
                 }
 

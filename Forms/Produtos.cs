@@ -27,11 +27,11 @@ namespace projetoPOO_BD
             List<Produto> listaProdutos = new List<Produto>();
             ProdutoDAO pdao = new ProdutoDAO();
             listaProdutos = pdao.Listar();
-
-            foreach (var item in listaProdutos)
+            
+            foreach (var item in listaProdutos )
             {
                 dgvProdutos.Rows.Add(item.idProduto, item.nomeProduto,
-                     item.categoria, item.preco, item.undProduto); ;
+                     item.categoria, item.descricao, item.preco, item.undProduto, item._fornecedor.idFornecedor);
             }
         }
 
@@ -40,7 +40,6 @@ namespace projetoPOO_BD
             CadastroProdutos form = new CadastroProdutos();
             form.ShowDialog();
             AtualizarProduto();
-            
         }
 
         private void btPesquisarProdutos_Click(object sender, EventArgs e)
@@ -64,7 +63,7 @@ namespace projetoPOO_BD
             foreach (var item in produtosFiltrados)
             {
                 dgvProdutos.Rows.Add(item.idProduto, item.nomeProduto,
-                     item.categoria, item.preco, item.undProduto);
+                     item.categoria, item.descricao, item.preco, item.undProduto, item._fornecedor.idFornecedor);
             }
         }
 
@@ -82,6 +81,7 @@ namespace projetoPOO_BD
                 {
                     AtualizarProduto form = new AtualizarProduto(p.idProduto, p.categoria, p.descricao, 
                         p.preco, p.undProduto, p.nomeProduto, p._fornecedor.idFornecedor);
+
                     form.ShowDialog();
                     AtualizarProduto();
                 }

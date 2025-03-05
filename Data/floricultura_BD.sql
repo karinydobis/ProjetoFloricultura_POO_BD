@@ -85,3 +85,7 @@ INSERT INTO Produtos (nomeProduto, categoria, descricao, preco, undProduto, fkid
 
 INSERT INTO Produtos (nomeProduto, categoria, descricao, preco, undProduto, fkidFornecedor) VALUES 
 ("Rosas Vermelhas", "Flores e Arranjos", "Arranjo de rosas vermelhas frescas", 60.00, "Unidade", 3);
+
+SELECT * FROM Produtos;
+SELECT * FROM Fornecedores;
+
